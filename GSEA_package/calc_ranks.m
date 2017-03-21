@@ -35,7 +35,7 @@ switch method
     case 'log2_ratio'
         ranks = log2(mean(2.^data(:,gr1),2)./mean(2.^data(:,gr0),2));
         tail = 'both';
-    case 'Wilcoxon'
+    case 'SoR'
         ranks = zeros(1,m);
         for a=1:m
             rank_tmp = tiedrank(data(a,:));

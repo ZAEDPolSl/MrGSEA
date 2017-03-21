@@ -135,7 +135,7 @@ parfor a=1:GS.nb
         tmp_NES(ind) = ES_perm(ind)/mean(ES_perm(ind));
         NES_perm(a,:) = tmp_NES;
         if ~isempty(ES_perm(ind))
-            out_tmp(4) = sum(ES_perm >= ESmax)/length(ES_perm(ind));  % p-value
+            out_tmp(4) = max(1,sum(ES_perm >= ESmax))/length(ES_perm(ind));  % p-value
             out_tmp(5) = ESmax/mean(ES_perm(ind)); % Normalized Enrichment Score 
         else
             out_tmp(4) = NaN;  % p-value
@@ -150,7 +150,7 @@ parfor a=1:GS.nb
         tmp_NES(ind) = ES_perm(ind)/abs(mean(ES_perm(ind)));
         NES_perm(a,:) = tmp_NES;
         if ~isempty(ES_perm(ind))
-            out_tmp(4) = sum(ES_perm <= ESmax)/length(ES_perm(ind));  % p-value
+            out_tmp(4) = max(1,sum(ES_perm <= ESmax))/length(ES_perm(ind));  % p-value
             out_tmp(5) = ESmax/abs(mean(ES_perm(ind))); % Normalized Enrichment Score 
         else
             out_tmp(4) = NaN;  % p-value
