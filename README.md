@@ -7,4 +7,5 @@ Major adjustments of the method:
 - possibility to use external Gene Set Database
 - phenotype permutation available for all ranking methods (even external ranking)
 - increased efficiency by parallel computing used
+
 **Author**: [Michał Marczyk](http://zaed.aei.polsl.pl/index.php/pl/7-michal-marczyk)
