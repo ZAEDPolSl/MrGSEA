@@ -12,4 +12,4 @@ if you use this software please cite:
 
 Zyla, J., Marczyk, M., Weiner, J., & Polanska, J. (2017). Ranking metrics in gene set enrichment analysis: do they matter?. BMC Bioinformatics, 18(1), 256
 
-**Author**: [Michał Marczyk](http://zaed.aei.polsl.pl/index.php/pl/7-michal-marczyk)
+**Author**: [Michał Marczyk](https://www.researchgate.net/profile/Michal-Marczyk) and [Joanna Żyła](https://www.researchgate.net/profile/Joanna-Zyla)
